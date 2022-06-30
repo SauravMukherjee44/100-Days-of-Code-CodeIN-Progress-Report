@@ -45,7 +45,7 @@ export default function App() {
 
         <div className='d-flex justify-content-center my-5'>
           <div class="form-outline">
-            <input type="search" onChange={(e) => setfilterVal(e.target.value)} id="form1" class="form-control" placeholder="Search Your Name.." aria-label="Search" />
+            <input type="search" onChange={(e) => setfilterVal(e.target.value)} id="form1" class="form-control" placeholder="Search Your rank.." aria-label="Search" />
           </div>
         </div>
 
