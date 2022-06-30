@@ -11,7 +11,7 @@
 
 So, here you go! Contribute to the Open Source Website of CodeIN Community 🤩 Excited?
 <div align="left">
-<a href="https://github.com/SauravMukherjee44/CodeIN-Community-Website"><img src="https://sloc.xyz/github/SauravMukherjee44/CodeIN-Community-Website" alt="LOC"/></a>
+
 <a href="https://github.com/SauravMukherjee44/CodeIN-Community-Website"><img src="https://img.shields.io/github/stars/SauravMukherjee44/CodeIN-Community-Website" alt="Stars Badge"/></a>
 <a href="https://github.com/SauravMukherjee44/CodeIN-Community-Website/network/members"><img src="https://img.shields.io/github/forks/SauravMukherjee44/CodeIN-Community-Website" alt="Forks Badge"/></a>
 <a href="https://github.com/SauravMukherjee44/CodeIN-Community-Website/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/SauravMukherjee44/CodeIN-Community-Website?color=2b9348"></a>
@@ -30,7 +30,6 @@ So, here you go! Contribute to the Open Source Website of CodeIN Community 🤩 
 <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"/>
 
 ## 📌 Sneak Peek of the Website:
-![image](https://github.com/SauravMukherjee44/CodeIN-Community-Website/blob/d17228955f83a69a76beebfc8f090d9da545ecbe/assets/img/screencapture-codeincommunity-tech-2022-04-19-02_35_25.png)
 
 In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
 
