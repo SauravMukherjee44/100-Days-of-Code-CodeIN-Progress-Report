@@ -57,12 +57,11 @@ export default function App() {
               <th>NAME</th>
               <th className='text-nowrap '>College NAME</th>
               <th className='text-nowrap text-center'>DAYS COMPLETED</th>
-              <th className='text-nowrap text-center'>DAYS MISSED</th>
               <th className='text-nowrap text-center'>CURRENT STREAK</th>
             </tr>
           </thead>
           <tbody>
-            
+
             {
               [...user]
                 .sort((a, b) => b.CURRENTSTREAK - a.CURRENTSTREAK)
@@ -81,7 +80,6 @@ export default function App() {
                     <td>{val.NAME.toUpperCase()}</td>
                     <td>{val.COLLEGENAME}</td>
                     <td className='text-center'>{val.DAYSCOMPLETED}</td>
-                    <td className='text-center'>{val.DAYSMISSED}</td>
                     <td className='text-center'>{val.CURRENTSTREAK}</td>
                   </tr>
                 })
