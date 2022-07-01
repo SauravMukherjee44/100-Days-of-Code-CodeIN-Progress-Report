@@ -37,27 +37,28 @@ export default function App() {
   return (
     <>
       <div className='container py-3'>
-        <img src={img} width="50" height="50" alt="codein community" />
+        <img src={img} width="50" height="50" loading='lazy' alt="codein community" />
       </div>
 
-      <div className='text-center w-100'>
+      <div className=' w-100'>
         <h1 className='text-center mx-2 lh-base lh-sm-0 fs-2'>100 DAYS OF CODE {br} PROGRESS REPORT</h1>
 
-        <div className='d-flex justify-content-center my-5'>
-          <div class="form-outline">
-            <input type="search" onChange={(e) => setfilterVal(e.target.value)} id="form1" class="form-control" placeholder="Search Your Name.." aria-label="Search" />
+        <div className='d-flex justify-content-center my-5 '>
+          <div className="border-2 w-50">
+            <input type="search" onChange={(e) => setfilterVal(e.target.value)} id="form1" className="form-control" placeholder="Search Your Name.." aria-label="Search" />
           </div>
         </div>
 
-        <Table responsive bordered className='container w-auto table-xl text-nowrap my-2 overflow-scroll  table-fixed mx-4 mx-sm-auto '>
-          <thead className=''>
+      <div className='container'>
+        <Table responsive bordered className='table-fixed my-2 overflow-scroll mx-4 mx-sm-auto '>
+          <thead>
             <tr className='text-uppercase table-success'>
-              <th className='px-3'>#</th>
-              <th className='px-3'>NAME</th>
-              <th className='text-nowrap text-left'>College NAME</th>
-              <th className='text-nowrap'>DAYS COMPLETED</th>
-              <th className='text-nowrap'>DAYS MISSED</th>
-              <th className='text-nowrap'>CURRENT STREAK</th>
+              <th>#</th>
+              <th>NAME</th>
+              <th className='text-nowrap '>College NAME</th>
+              <th className='text-nowrap text-center'>DAYS COMPLETED</th>
+              <th className='text-nowrap text-center'>DAYS MISSED</th>
+              <th className='text-nowrap text-center'>CURRENT STREAK</th>
             </tr>
           </thead>
           <tbody>
@@ -65,26 +66,28 @@ export default function App() {
               [...user]
                 .sort((a, b) => b.CURRENTSTREAK - a.CURRENTSTREAK)
                 .filter((val) => {
-                  if (filterVal === "") {
-                    return val
+                  if (filterVal === "" || val.NAME === undefined) {
+                    return val;
                   }
                   else if (val.NAME.toLowerCase().includes(filterVal.toLowerCase())) {
-                    return val
+                    return val;
                   }
+                  return ;
                 })
                 .map((val, index) => {
                   return <tr key={index}>
-                    <td>{index + 1}</td>
-                    <td>{val.NAME}</td>
+                    <td className='w-auto'>{index + 1}</td>
+                    <td>{val.NAME.toUpperCase()}</td>
                     <td>{val.COLLEGENAME}</td>
-                    <td>{val.DAYSCOMPLETED}</td>
-                    <td>{val.DAYSMISSED}</td>
-                    <td>{val.CURRENTSTREAK}</td>
+                    <td className='text-center'>{val.DAYSCOMPLETED}</td>
+                    <td className='text-center'>{val.DAYSMISSED}</td>
+                    <td className='text-center'>{val.CURRENTSTREAK}</td>
                   </tr>
                 })
             }
           </tbody>
         </Table>
+        </div>
       </div>
     </>
   );
