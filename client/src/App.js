@@ -62,6 +62,7 @@ export default function App() {
             </tr>
           </thead>
           <tbody>
+            
             {
               [...user]
                 .sort((a, b) => b.CURRENTSTREAK - a.CURRENTSTREAK)
