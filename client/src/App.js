@@ -72,7 +72,6 @@ export default function App() {
                   else if (val.NAME.toString().toLowerCase().includes(filterVal.toLowerCase())) {
                     return val;
                   }
-                  return ;
                 })
                 .map((val, index) => {
                   return <tr key={index}>
