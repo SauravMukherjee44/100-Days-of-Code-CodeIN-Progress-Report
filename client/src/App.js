@@ -77,7 +77,7 @@ export default function App() {
                 .map((val, index) => {
                   return <tr key={index}>
                     <td className='w-auto'>{index + 1}</td>
-                    <td>{val.NAME.toUpperCase()}</td>
+                    <td>{val.NAME()}</td>
                     <td>{val.COLLEGENAME}</td>
                     <td className='text-center'>{val.DAYSCOMPLETED}</td>
                     
