@@ -66,7 +66,7 @@ export default function App() {
               [...user]
                 .sort((a, b) => b.DAYSCOMPLETED - a.DAYSCOMPLETED)
                 .filter((val) => {
-                  if (filterVal === "" || val.NAME === undefined) {
+                  if (filterVal === "" || val.NAME === undefined || val.DAYSCOMPLETED === undefined) {
                     return val;
                   }
                   else if (val.NAME.toLowerCase().includes(filterVal.toLowerCase())) {
