@@ -69,18 +69,16 @@ export default function App() {
                   if (filterVal === "" || val.NAME === undefined || val.DAYSCOMPLETED === undefined) {
                     return val;
                   }
-                  else if (val.NAME.toLowerCase().includes(filterVal.toLowerCase())) {
+                  else if (val.NAME.toString().toLowerCase().includes(filterVal.toLowerCase())) {
                     return val;
                   }
-                  return ;
                 })
                 .map((val, index) => {
                   return <tr key={index}>
                     <td className='w-auto'>{index + 1}</td>
-                    <td>{val.NAME()}</td>
+                    <td>{val.NAME}</td>
                     <td>{val.COLLEGENAME}</td>
                     <td className='text-center'>{val.DAYSCOMPLETED}</td>
-                    
                   </tr>
                 })
             }
