@@ -56,15 +56,15 @@ export default function App() {
               <th>#</th>
               <th>NAME</th>
               <th className='text-nowrap '>College NAME</th>
-              <th className='text-nowrap text-center'>DAYS COMPLETED</th>
-              <th className='text-nowrap text-center'>CURRENT STREAK</th>
+              <th className='text-nowrap text-center'>DAYSCOMPLETED</th>
+              
             </tr>
           </thead>
           <tbody>
 
             {
               [...user]
-                .sort((a, b) => b.CURRENTSTREAK - a.CURRENTSTREAK)
+                .sort((a, b) => b.DAYSCOMPLETED - a.DAYSCOMPLETED)
                 .filter((val) => {
                   if (filterVal === "" || val.NAME === undefined) {
                     return val;
@@ -80,7 +80,7 @@ export default function App() {
                     <td>{val.NAME.toUpperCase()}</td>
                     <td>{val.COLLEGENAME}</td>
                     <td className='text-center'>{val.DAYSCOMPLETED}</td>
-                    <td className='text-center'>{val.CURRENTSTREAK}</td>
+                    
                   </tr>
                 })
             }
