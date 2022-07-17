@@ -39,7 +39,7 @@ export default function App() {
 
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home"><img src={img} width="45" height="45" /></Navbar.Brand>
+          <Navbar.Brand href="#home"><img src={img} width="45" height="45" loading='lazy' alt="codeincommunity" /></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse className='justify-content-end' id="responsive-navbar-nav">
             <Nav>
@@ -90,6 +90,7 @@ export default function App() {
                     else if (val.NAME.toString().toLowerCase().includes(filterVal.toLowerCase())) {
                       return val;
                     }
+                    return ;
                   })
                   .map((val, index) => {
                     return <tr key={index}>
