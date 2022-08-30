@@ -71,7 +71,6 @@ export default function App() {
           <Table responsive bordered className='table-fixed my-2 overflow-scroll mx-4 mx-sm-auto '>
             <thead>
               <tr className='text-uppercase table-success'>
-                <th>#</th>
                 <th>NAME</th>
                 <th className='text-nowrap '>College NAME</th>
                 <th className='text-nowrap text-center'>DAYSCOMPLETED</th>
