@@ -72,6 +72,7 @@ export default function App() {
             <thead>
               <tr className='text-uppercase table-success'>
                 <th>NAME</th>
+                 <th>S.NO ( Not your rank)</th>
                 <th className='text-nowrap '>College NAME</th>
                 <th className='text-nowrap text-center'>DAYSCOMPLETED</th>
 
