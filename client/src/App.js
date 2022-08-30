@@ -60,7 +60,7 @@ export default function App() {
 
       <div className='w-100 py-5'>
         <h1 className='text-center mx-2 lh-base lh-sm-0 fs-2'>100 DAYS OF CODE {br} PROGRESS REPORT</h1>
-        <h1 className='text-center mx-2 lh-base lh-sm-0 fs-2'>100 Top Performing Participants will be selected by {br} CodeIN Community </h1>
+        <h1 className='text-center mx-2 lh-base lh-sm-0 fs-2'>Top Performing Participants will be selected by {br} CodeIN Community </h1>
 
         <div className='d-flex justify-content-center my-5 '>
           <div className="border-2 w-50">
