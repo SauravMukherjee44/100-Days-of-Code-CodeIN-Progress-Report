@@ -60,6 +60,7 @@ export default function App() {
 
       <div className='w-100 py-5'>
         <h1 className='text-center mx-2 lh-base lh-sm-0 fs-2'>100 DAYS OF CODE {br} PROGRESS REPORT</h1>
+        <h1 className='text-center mx-2 lh-base lh-sm-0 fs-2'>Top Performing Participants will be selected by {br} CodeIN Community </h1>
 
         <div className='d-flex justify-content-center my-5 '>
           <div className="border-2 w-50">
@@ -71,7 +72,7 @@ export default function App() {
           <Table responsive bordered className='table-fixed my-2 overflow-scroll mx-4 mx-sm-auto '>
             <thead>
               <tr className='text-uppercase table-success'>
-                <th>#</th>
+                <th>S.NO ( Not your rank)</th>
                 <th>NAME</th>
                 <th className='text-nowrap '>College NAME</th>
                 <th className='text-nowrap text-center'>DAYSCOMPLETED</th>
