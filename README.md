@@ -102,7 +102,7 @@ To start contributing, follow the below guidelines:
 
 **3.** Navigate to the project directory.
 ```
-   cd CodeIN-Community-Website
+   cd 100-Days-of-Code-CodeIN-Progress-Report
 ```
 
 **4.** Create a new branch:
